@@ -3,7 +3,7 @@
 
 var Mysql = require("bs-mysql/src/Mysql.bs.js");
 
-var conn = Mysql.createConnection("127.0.0.1", 3306, "root", undefined, undefined, /* () */0);
+var conn = Mysql.createConnection("127.0.0.1", 3306, "ojisan", "ojisan", undefined, /* () */0);
 
 Mysql.query(conn, "SHOW DATABASES", (function (result) {
         if (result.tag) {

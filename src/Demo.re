@@ -1,5 +1,5 @@
 let conn =
-  Mysql.createConnection(~host="127.0.0.1", ~port=3306, ~user="root", ());
+  Mysql.createConnection(~host="127.0.0.1", ~port=3306, ~user="ojisan", ~password="ojisan", ());
 
 Mysql.query(conn, "SHOW DATABASES", result => {
   switch (result) {
