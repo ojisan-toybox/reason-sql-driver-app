@@ -1,23 +1,23 @@
 # reason-sql-driver-app
 
-Reason で SQL 叩く
+Reason で SQL 叩く. DB のドライバーには [bs-mysql](https://github.com/davidgomes/bs-mysql)を利用.
 
 # Build
 
 ```bash
 # for yarn
 yarn build
-
-# for npm
-npm run build
 ```
 
-# Build + Watch
+# How to use
 
-```bash
-# for yarn
-yarn start
+```zsh
+# start MySQL container
+docker-compose up
 
-# for npm
-npm run start
+# db migration and drop table
+sh init-mysql.sh
+
+# exec query
+node src/Demo.re.js
 ```

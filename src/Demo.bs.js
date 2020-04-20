@@ -5,7 +5,17 @@ var Mysql = require("bs-mysql/src/Mysql.bs.js");
 
 var conn = Mysql.createConnection("127.0.0.1", 3306, "ojisan", "ojisan", undefined, /* () */0);
 
-Mysql.query(conn, "SHOW DATABASES", (function (result) {
+Mysql.query(conn, "INSERT INTO database.t_user VALUES (1,'taro', null, null);", (function (result) {
+        if (result.tag) {
+          console.log(result[0].message);
+          return /* () */0;
+        } else {
+          console.log(result[0].results);
+          return /* () */0;
+        }
+      }));
+
+Mysql.query(conn, "SELECT * from database.t_user", (function (result) {
         if (result.tag) {
           console.log(result[0].message);
           return /* () */0;
