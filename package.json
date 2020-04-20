@@ -13,5 +13,13 @@
   "license": "MIT",
   "devDependencies": {
     "bs-platform": "^7.2.2"
+  },
+  "dependencies": {
+    "@glennsl/bs-json": "^5.0.2",
+    "bs-mysql": "^0.2.0",
+    "bs-mysql2": "^9.0.3",
+    "bs-sql-common": "^6.0.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0"
   }
 }
